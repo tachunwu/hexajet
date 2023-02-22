@@ -17,6 +17,6 @@ func PublishEmitter(nc *nats.Conn, subject string, logger *zap.Logger) {
 			"in-process repository publish",
 			zap.String("message", "repository push command/event"),
 		)
-		time.Sleep(5 * time.Second)
+		time.Sleep(1 * time.Second)
 	}
 }
